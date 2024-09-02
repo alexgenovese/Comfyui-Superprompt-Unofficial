@@ -6,7 +6,7 @@ from transformers import T5Tokenizer, T5ForConditionalGeneration
 class SuperPrompterNode:
     def __init__(self):
         # self.modelDir = os.path.expanduser("~") + "/.models"
-        self.modelDir = "/comfyui/models/LLM"
+        self.modelDir = "/models/LLM"
         self.tokenizer = None
         self.model = None
 
