@@ -2,11 +2,12 @@ import os
 import torch
 import re
 from transformers import T5Tokenizer, T5ForConditionalGeneration
+import folder_paths
 
 class SuperPrompterNode:
     def __init__(self):
         # self.modelDir = os.path.expanduser("~") + "/.models"
-        self.modelDir = "/models/LLM"
+        self.modelDir = os.path.join(folder_paths.models_dir, "LLM", "superprompt-v1")
         self.tokenizer = None
         self.model = None
 
